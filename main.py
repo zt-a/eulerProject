@@ -21,12 +21,12 @@ def getTasks():
             print('[+] GET PROBLEM')
             contentTask = mainBlock.find("div", {'class': 'problem_content'}).text
             print('[!] GET RESULTS')
-            print(numTask, titleTask, contentTask)
-            print('-'*20)
+
+            print('-' * 50)
             numberFile = numTask.split(' ')[-1]
-            
-            print('-'*20, 'CREATE PYTHON FILE', '-'*20)
-            with open(f'task{numberFile}.py', 'w', encoding='utf-8') as file:
+
+            print('-' * 20, 'CREATE PYTHON FILE', '-' * 20)
+            with open(f'tasks/task{numberFile}.py', 'w', encoding='utf-8') as file:
                 file.write(f"'''\n{numTask}\n"
                            f"{titleTask}"
                            f"{contentTask}'''")
@@ -52,8 +52,8 @@ def getTasks():
             print('[+] GET PROBLEM')
             contentTask = mainBlock.find("div", {'class': 'problemsItem'}).text
             print('[!] GET RESULTS')
-            print(numTask, titleTask, contentTask)
-            print('-' * 20)
+
+            print('-' * 50)
             numberFile = numTask.split(' ')[-1]
 
             print('-' * 20, 'CREATE PYTHON FILE', '-' * 20)
