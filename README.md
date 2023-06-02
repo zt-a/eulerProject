@@ -25,3 +25,12 @@
 `cd venv/Scripts/`
 `chmod +x activate`
 `./activate`
+
+## Installing required packages | Установка необходимых пакетов
+`pip install -r requirement.txt`
+
+-------------------------------------------------------------------------------------------------------
+
+All tasks in the tasks directory | Все задачи в директории tasks<br>
+main.py file for generating euler project tasks | Файл main.py для сгенерование задач проекта эйлера<br>
+This is a useless project I hope at least someone sees | Это безполезный проект надеюсь хоть кто-то увидеть 
