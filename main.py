@@ -57,7 +57,7 @@ def getTasks():
             numberFile = numTask.split(' ')[-1]
 
             print('-' * 20, 'CREATE PYTHON FILE', '-' * 20)
-            with open(f'task{numberFile}.py', 'w', encoding='utf-8') as file:
+            with open(f'tasks/task{numberFile}.py', 'w', encoding='utf-8') as file:
                 file.write(f"'''\n{numTask}\n"
                            f"{titleTask}"
                            f"{contentTask}'''")
